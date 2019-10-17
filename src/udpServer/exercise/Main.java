@@ -19,6 +19,7 @@ public class Main {
                 String s = new String(dp.getData(), 0, dp.getLength());
                 System.out.println("receive: " + s);
             }
+            //由於是sever，不需要close()
         } catch (SocketException e) {
             e.printStackTrace();
         } catch (IOException e) {
